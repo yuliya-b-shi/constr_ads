@@ -13,6 +13,7 @@ st.write('Источник иллюстрации: https://hitech24.pro/dom/5676
 st.write('_Реальные и номинальные средние зарплаты (строительство)_')
 bar_chart = alt.Chart(df[['Год', 'Реал_строительство', 'Строительство']]).mark_bar().encode(
         x='Год:O', y='Реал_строительство:Q', color='Строительство:N')
+st.altair_chart(bar_chart, use_container_width=True)
 st.write('_Реальные и номинальные средние зарплаты (реклама)_')
 st.bar_chart(df, x='Год', y=['Рекламная деятельность', 'Реал_реклама'])
 option = st.selectbox(
