@@ -11,7 +11,7 @@ df = pd.read_csv('real_sal_2.csv')
 st.image('pict.jpg')
 st.write('Источник иллюстрации: https://hitech24.pro/dom/56767-dom-na-ladoni-74-foto.html')
 st.write('_Реальные и номинальные средние зарплаты (строительство)_')
-st.bar_chart(df, x='Год', y=['Реал_строительство'], color=['Строительство'])
+st.bar_chart(df, x='Год', y='Реал_строительство', color='Строительство')
 st.write('_Реальные и номинальные средние зарплаты (реклама)_')
 st.bar_chart(df, x='Год', y=['Рекламная деятельность', 'Реал_реклама'])
 option = st.selectbox(
