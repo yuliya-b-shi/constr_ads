@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 
-st.header(':red[cтроительство] VS :red[реклама]', divider='rainbow')
+st.header(':red[cтроительство] VS :red[реклама]')
 st.text('''
 Сравнение двух отраслей российской экономики, значительно отстававших в 20 веке 
         и получивших развитие в 21-ом (на данных Росстата за 2002-2022 г.г.)'''
